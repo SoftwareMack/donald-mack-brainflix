@@ -21,7 +21,8 @@ function Header() {
           className="header__container__picture--mobile"
         />
       </div>
-      
+      <button className="header__button">UPLOAD</button>
+      <img src={profilePic} alt="avatar" className="header__avatar" />
     </header>
   );
 }
