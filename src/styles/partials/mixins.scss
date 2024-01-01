@@ -1,0 +1,242 @@
+@import '../../styles/partials/typography.scss'  ;
+
+$desktop: min-width 1280px ;
+$tablet: min-width 768px max-width 1279px;
+$mobile: 320px max-width 767px;
+
+$primary-cta-color: #0095FF;
+$form-field-width: 240px;
+$form-field-height-desktop: 40px;
+
+
+$form-field-height-desktop: 40px;
+$form-field-height-mobile: 36px;
+$form-field-radius: 4px;
+$form-field-padding-desktop: 16px;
+$form-field-padding-mobile: 12px;
+$form-field-label-spacing: 4px;
+$form-field-border: #E1E1E1;
+$form-field-border-active: #0095FF;
+$form-field-border-error: #D22D2D;
+$silver: #AFAFAF;
+$brainflix-black: #323232;
+$brainflix-blue: #0095FF;
+$brainflix-darkBlue:#0065AD;
+$silver: #AFAFAF;
+$mercury: #E1E1E1;
+$alabaster: #FAFAFA;
+$brainFlix-black: #323232;
+$text-label-color: #AFAFAF;
+
+$cta-button-height: 40px;
+$cta-button-width-desktop: 150px;
+$cta-button-padding: 32px;
+$cta-button-radius: 4px;
+
+$divider-stroke-width: 1px;
+$divider-fill-color: #E1E1E1;
+
+$image-border-radius: 4px;
+
+$avatar-border-radius: 50%;
+$avatar-max-size-desktop: 40px;
+$avatar-max-size-mobile: 36px;
+$avatar-placeholder-color: #E1E1E1;
+
+$mobile-page-header: 24px;
+$mobile-section-header: 12px;
+$mobile-subheader: 13px;
+$mobile-body-copy: 13px;
+$mobile-labels-buttons: 10px;
+$desktop-labels-buttons: 12px;
+
+$cta-button-height: 40px;
+$cta-button-width-desktop: 150px;
+$cta-button-padding: 32px;
+$cta-button-radius: 4px;
+
+$nav-height-desktop: $cta-button-height;
+$nav-height-tablet: $cta-button-height;
+$nav-height-mobile: $cta-button-height;
+
+$desktop-padding-before: 36px;
+$desktop-padding-after: 24px;
+$desktop-padding-between: 24px;
+
+$mobile-padding-before: 24px;
+$mobile-padding-after: 16px;
+$mobile-padding-between: 16px;
+
+@mixin font-bold {
+    font-weight: $font-weight-bold;
+  }
+
+  @mixin font-regular {
+    font-weight: $font-weight-regular;
+  }
+
+  @mixin text-primary-color {
+    color: $primary-text-color;
+  }
+
+  @mixin text-secondary-color {
+    color: $secondary-text-color;
+  }
+
+  @mixin background-primary-color {
+    background-color: $background-color;
+  }
+
+  @mixin button-styles {
+    height: 40px;
+    padding-left: $cta-button-padding;
+    padding-right: $cta-button-padding;
+    border-radius: $cta-button-radius;
+    font-size: $desktop-labels-buttons;
+    color: #FFFFFF;
+    background-color: #0095FF ;
+    color: #0095FF;
+    border: none;
+    cursor: pointer;
+
+    @media (max-width: $tablet) {
+      font-size: $mobile-labels-buttons;
+    }
+  }
+
+  @mixin form-field-styles {
+    height: $form-field-height-desktop;
+    width: $form-field-width;
+    padding: $form-field-padding-desktop;
+    border: 1px solid $form-field-border;
+    border-radius: $form-field-radius;
+
+    &:focus {
+      border-color: $form-field-border-active;
+    }
+
+    @media (max-width: $mobile) {
+      height: $form-field-height-mobile;
+      padding: $form-field-padding-mobile;
+    }
+  }
+
+  @mixin mobile-spacing {
+    margin-top: $mobile-padding-before;
+    margin-bottom: $mobile-padding-after;
+  }
+
+  .button {
+    @include button-styles;
+  }
+
+  .form-field {
+    @include form-field-styles;
+  }
+
+  .mobile-text {
+    @include mobile-spacing;
+  }
+
+
+
+  @mixin mobile {
+    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+      @content;
+    }
+  }
+
+
+
+
+  @mixin tablet {
+    @media only screen and (min-width: 768px) and (max-width: 1279px) {
+      @content;
+    }
+  }
+
+  @mixin desktop {
+    @media only screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+
+
+
+
+  //page headers
+@mixin page-header-styles(
+  $font-size: 1.5rem,
+  $line-height:2rem
+) {
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 700;
+  color: $brainFlix-black;
+}
+
+@mixin section-header-styles(
+){
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  font-weight: 700;
+  color: $silver;
+}
+
+@mixin sub-header-styles(
+  $font-size: 0.813rem,
+  $line-height: 1.125rem
+){
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 700;
+  color: $brainFlix-black;
+}
+
+@mixin body-text-styles(
+  $font-size: 0.813rem,
+  $line-height: 1.125rem
+){
+  font-size: $font-size;
+  line-height: $line-height;
+  font-weight: 400;
+  color: $brainFlix-black;
+}
+
+@mixin custom-paddings(
+  $padding-before-headlines: 1.5rem,
+  $padding-after-headlines: 1rem,
+  $padding-between-components: 1rem
+){
+  padding-top: $padding-before-headlines;
+  padding-bottom: $padding-after-headlines;
+  padding: $padding-between-components 0;
+}
+
+
+@mixin tablet-styles {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    font-size: 18px;
+    padding: 10px;
+  }
+}
+
+
+
+$padding-after-headlines-mobile: 10px;
+$padding-after-headlines-desktop: 20px;
+
+
+
+
+@mixin tablet-styles {
+  @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+    @mixin desktop-styles {
+      @media only screen and (min-width: 1025px) {
+        @content;
+      }
+    }
