@@ -63,6 +63,7 @@ function Comments () {
                             <div className='videoList__text'>
                                 <p className='videoList__name'>{video.title}</p>
                                 <p className='videoList__channel'>{video.channel}</p>
+                                <div><span className='commentList__divider1'></span></div>
                             </div>
                         </div>
                         </li>))}
