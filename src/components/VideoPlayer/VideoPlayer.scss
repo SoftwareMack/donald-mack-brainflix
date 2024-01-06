@@ -1,0 +1,27 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/typography.scss';
+@import '../../styles/partials/global.scss';
+
+
+.player-wrapper {
+    background-color: $brainflix-black;
+
+    @include tablet {
+        padding: 0 2.25rem;
+    }
+
+    @include desktop {
+        padding: 0 11.6rem;
+    }
+
+    &__player {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+
+        &--bg {
+            position: relative;
+            padding-bottom: 56.25%;
+        }
+    }
+}

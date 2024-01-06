@@ -1,0 +1,82 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/typography.scss';
+@import '../../styles/partials/global.scss';
+
+
+
+.comment-card {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    border-bottom: solid 2px $mercury;
+
+    @include tablet {
+        justify-content: flex-start;
+    }
+
+    @include desktop {
+        padding-right: 2rem;
+        padding-left: 1rem;
+    }
+
+    @include desktop {
+        border-bottom: none;
+        border-top: solid 2px $mercury;
+        padding-top: 1rem;
+        margin-bottom: 0;
+    }
+
+    &__img {
+        height: 2.25rem;
+        width: 2.25rem;
+        background-color: $mercury;
+        border-radius: 50%;
+
+        @include tablet {
+            margin-right: 1rem;
+            height: 2.15rem;
+        }
+
+        @include desktop {
+            width: 4rem;
+            margin-right: 2.5rem;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 75vw;
+
+        @include tablet {
+            width: 90vw;
+        }
+
+        &-top {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 0.5rem;
+        }
+
+        &__comment {
+            padding-bottom: 1rem;
+            font-family: $font-family;
+        }
+    }
+}
+
+.comment-card-wrapper__date {
+    color: #E1E1E1;
+    margin-left: 50vw;
+    margin-top: -10vw;
+
+    @include tablet {
+        color: #E1E1E1;
+        margin-left: 75vw;
+        margin-top: -5vw;
+    }
+}
+.comment-card-wrapper__name {
+    font-weight: 700;
+    font-family: $font-family;
+}

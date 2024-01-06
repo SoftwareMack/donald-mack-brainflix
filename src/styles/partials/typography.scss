@@ -1,0 +1,63 @@
+
+$desktop-page-header: 33px;
+$desktop-section-header: 12px;
+$desktop-subheader: 14px;
+$desktop-body-copy: 14px;
+$desktop-labels-buttons: 12px;
+$mobile-page-header: 24px;
+$mobile-section-header: 12px;
+$mobile-subheader: 13px;
+$mobile-body-copy: 13px;
+$mobile-labels-buttons: 10px;
+@font-face {
+  font-family: 'avenir-next';
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: 'avenir-next';
+  src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("Demi");
+}
+@font-face {
+  font-family: 'avenir-next';
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("bold");
+}
+@media screen and (max-width: 767px) {
+  h3, h4 {
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 700;
+  }
+}
+@media screen  and (min-width:768px) {
+  h3,h4 {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+ }
+}
+p {
+  font-family: "avenir-next";
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+}
+@media screen and (max-width: 767px) {
+  p {
+    font-size: 13px;
+    line-height: 18px;
+  }
+}
+.labels-buttons {
+  font-family: "avenir-next",;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+}
+@media screen and (max-width: 767px) {
+  .labels-buttons {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
+

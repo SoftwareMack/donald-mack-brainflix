@@ -1,0 +1,230 @@
+@import '../../../styles/partials/mixins.scss';
+@import '../../../styles/partials/typography.scss';
+@import '../../../styles/partials/global.scss';
+
+$brainflix-black: #323232;
+$brainflix-blue: #0095FF;
+$brainflix-darkBlue:#0065AD;
+$silver: #AFAFAF;
+$mercury: #E1E1E1;
+$alabaster: #FAFAFA;
+
+.body {
+    font-family: $font-family, sans-serif;
+}
+
+
+
+.upload {
+
+    padding: 0 1rem 0 1rem;
+    width: 100vw;
+
+    @include tablet {
+        padding: 0 rem 0 rem;
+    }
+
+    @include desktop {
+        padding: 0 8rem 0 8rem;
+    }
+
+    &-wrapper {
+        border-top: .125rem solid;
+        color: $mercury;
+    }
+
+    &__heading {
+        padding: 1rem 0 1rem 0;
+        color: $brainflix-black;
+        font-family: $font-family, sans-serif;
+
+        @include tablet {
+            padding-top: 2rem;
+            border-bottom: 0.125rem $mercury solid;
+            color: $brainflix-black;
+            font-family: $font-family, sans-serif;
+
+        }
+
+        @include desktop {
+            padding-bottom: 1.5rem;
+        }
+    }
+
+    &-label {
+
+        &__img {
+            padding-bottom: 0.3rem;
+            font-size: 1rem;
+            color:$silver;
+            font-family: $font-family, sans-serif;
+
+            @include tablet {
+                padding-top: 1.5rem;
+            }
+        }
+
+        &__title {
+            padding-top: 1rem;
+            padding-bottom: 0.3rem;
+            color:$silver;
+            font-family: $font-family, sans-serif;
+        }
+
+        &__descr {
+            padding-bottom: 0.3rem;
+            color:$silver;
+            font-family: $font-family, sans-serif;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        border-radius: .25rem;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        @include desktop {
+            width: 100%;
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-direction: column;
+
+            @include desktop {
+                width: 33%;
+            }
+        }
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 1rem;
+
+        @include tablet {
+            border-bottom: .125rem solid;
+            color: $mercury;
+            margin-bottom: 1rem;
+        }
+
+        @include desktop {
+            width: 65%;
+            border: none;
+            padding-top: 1.5rem;
+            padding-bottom: 0;
+            margin: 0;
+            justify-content: space-between;
+        }
+
+        &__title {
+            resize: none;
+            border: .0625rem $mercury solid ;
+            border-radius: .25rem;
+            padding: 0.6rem 0 0 0.6rem;
+            height: 2.5rem;
+            margin-bottom: 1rem;
+            background-color: $alabaster;
+
+            &:focus {
+                outline: solid .0625rem;
+                color: $brainflix-blue;
+            }
+        }
+
+        &__descr {
+            resize: none;
+            border: .0625rem $mercury solid ;
+            border-radius: .25rem;
+            padding: 0.6rem;
+            background-color: $alabaster;
+
+            &:focus {
+                outline: solid .0625rem;
+                color: $brainflix-blue;
+            }
+
+            @include tablet {
+                height: 5rem;
+            }
+        }
+    }
+
+    &-buttons {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-bottom: 1rem;
+
+        @include tablet {
+            flex-direction: row-reverse;
+            justify-content: flex-start;
+        }
+        @include desktop {
+            display: flex;
+            width: 100%;
+            padding-bottom: 1rem;
+            flex-direction: row-reverse;
+        }
+
+        & a {
+
+            @include tablet {
+                width: 25%;
+            }
+
+            @include desktop {
+                width: 15%;
+            }
+        }
+
+        &__publish {
+            width: 100%;
+            height: 2.5rem;
+            border: none;
+            border-radius: .25rem;
+            margin-bottom: 1rem;
+            background-repeat: no-repeat;
+            background-position: 8px center;
+            background-color: $brainflix-blue;
+            -webkit-text-fill-color: white;
+
+            @include tablet {
+                width: 100%;
+            }
+        }
+
+        &__cancel {
+            width: 100%;
+            height: 2.5rem;
+            border: none;
+            border-radius: .25rem;
+            background-color: $brainflix-blue;
+            -webkit-text-fill-color: white;
+
+            @include tablet {
+                width: 25%;
+                margin-right: 1.5vw;
+            }
+
+            @include desktop {
+                width: 20%;
+            }
+        }
+    }
+}
+
+.desktop-wrapper {
+
+    @include desktop {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: .125rem solid;
+        color: $mercury;
+        padding-bottom: 2rem;
+        margin-bottom: 1rem;
+    }
+}
