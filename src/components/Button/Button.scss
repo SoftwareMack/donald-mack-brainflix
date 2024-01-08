@@ -2,8 +2,9 @@
 @use '../../styles/partials/global.scss' as *;
 @use '../../styles/partials/typography.scss' as *;
 
-.body {
-    font-family: avenir-next;
+.body{
+    font-family: $font-family;
+    display: flex;
 }
 .button__container {
     display: flex;
@@ -80,6 +81,5 @@
                 margin-top: 0;
             }
         }
-
     }
 }

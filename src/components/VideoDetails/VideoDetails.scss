@@ -5,283 +5,188 @@
 
 
 
+.body{
+    font-family: $font-family;
+    display: flex;}
 
-
-
-
-.activeVideoPlayer {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    font-family: 'avenir-next';
-    .videoContainer{
-        display: flex;
-        width: 100%;
-        height: 34vh;
+    .video-text {
+        padding: 1rem 1rem 0rem 1rem;
 
         @include tablet {
-            height: 60vw;
+            padding: 1rem 2rem 0rem 2rem;
         }
+
         @include desktop {
-            height: 60vw;
+            padding: 2rem 0rem 0rem 2rem;
         }
     }
-    &__title {
-        text-align: left;
-        display: flex;
-        font-size: 1.5rem;
-        font-weight: 700;
-        margin-left: 5vw;
-        margin-bottom: 1rem;
-        width: 85%;
-        font-family: 'avenir-next';
-        line-height: 32px;
+
+    .video__title {
+        border-bottom: solid 2px $mercury;
+        padding-bottom: 1rem;
+        font-family: $font-family;
+        font-size: 1.7em;
+
         @include tablet {
-            margin-left: 2vw;
-            margin-bottom: 1rem;
-            width: 74%;
-            font-size: 4.4vw;
-            font-weight: 700;
-            line-height: 44px;
-        }
-        @include desktop {
-            margin-left: 2vw;
-            margin-bottom: 1rem;
-            width: 58%;
-            font-size: 3.9vw;
-            font-weight: 700;
-            line-height: 44px;
+            border: none;
+            padding-bottom: 0rem;
+            font-size: 2em;
         }
     }
-    video {
-        margin: auto;
-        display:flex;
-        width: 100%;
-        flex-direction: column;
-    }
-    .activeVideo {
-        width: 100%;
-        margin: .75rem auto 1rem auto;
-        justify-content: center;
-        flex-direction: column;
-        display: flex;
-        @include tablet {
-            width: 90%;
-            margin: auto;
-        }
-        &__divider {
+
+
+    .video-info {
             display: flex;
-            border-bottom: 0.2rem solid;
-            color: $mercury;
-            width: 95%;
-            margin: auto;
-            stroke-width: 1rem;
+            flex-direction: row;
+            justify-content: space-between;
+            border-bottom: solid 2px $mercury;
+            padding: 0rem 0 1rem 0;
+
             @include desktop {
-                width: 60%;
-                margin: inherit;
+                padding-right: 2rem;
             }
-        }
-    }
-        &__divider {
-            display: flex;
-            border-bottom: .2rem solid;
-            color: $alabaster;
-            width: 95%;
-            margin: auto;
-        }
-}
-.activeVideoData {
-    display: flex;
-    margin: 1.5rem 1.5rem .5rem 1.5rem;
-    justify-content: space-between;
-    margin-top: 1vw;
-    @include desktop {
-        display: inline-flex;
-        margin: 1.5rem 1.5rem 0.5rem 1.5rem;
-        justify-content: space-between;
-        margin-top: 1vw;
-        margin-bottom: -5vw;
-        width: 59%;
-    }
-    &__section1 {
-            @include tablet {
+
+            &-side {
                 display: flex;
-                margin-top: -3vw;
-            }
-        &--channel {
-            font-weight: 700;
-            margin-bottom: 1rem;
-            font-size: 4vw;
-            margin-right: 2rem;
-            font-family: 'avenir-next';
-            @include tablet {
-                font-size: 2vw;
-                font-weight: 700;
-                margin-bottom: 1rem;
-                margin-right: 2rem;
-            }
-            @include desktop {
-                font-size: 2vw;
-                font-weight: 700;
-                margin-bottom: 2rem;
-                font-size: 2vw;
-                margin-right: 2rem;
-            }
-        }
-        &--date {
-            font-size: 4vw;
-            color: #AFAFAF;
-            font-weight: 500;
-            margin-top: 6vw;
-            @include tablet {
-                font-size: 2vw;
-                margin-top:3vw;
-                margin-bottom: -4vw;
-        }
-            @include desktop {
-                font-size: 2vw;
-                margin-left: 15vw;
-                margin-top: -5vw;
-    }
-    }
-}
-    &__section2 {
-        margin-right: 0;
-        @include tablet {
-            display: flex;
-            margin-right: 0;
-        }
-    }
-    &__viewsSection{
-        display: flex;
-        margin-bottom: 1rem;
-        @include tablet {
-            margin-right: 2rem ;
-        }
-        @include desktop {
-            margin-right: 2rem ;
-        }
-        &--count {
-            margin-left: 1rem;
-            color: $secondary-text-color;
-            font-size: 4vw;
-            @include tablet {
-                margin-left: .5rem;
-                font-size: 2vw;
-                margin-top: -0.2vw;
-            }
-            @include desktop {
-                margin-left: .5rem;
-                font-size: 2vw;
-            }
-        }
-        img {
-            width: 5vw;
-            @include tablet{
-                width: 2vw;
-                margin-top: -2.2vw;
-            }
-            @include desktop{
-                width: 2vw;
-                margin-top: -2vw;
-            }
-        }
-    }
-    &__likesSection{
-        display: flex;
-        margin-bottom: 1rem;
-        margin-top: -11vw;
-        &--likes {
-            margin-left: 1rem;
-            color: $secondary-text-color;
-            font-size: 4vw;
-            margin-top:8vw;
-            @include tablet {
-                margin-left: .5rem;
-                font-size: 2vw;
-                margin-top: 11vw;
-                display: inline-flex;
-            }
-            @include desktop {
-                margin-left: 0.5rem;
-                font-size: 2vw;
-                margin-top: 5vw;
-                margin-bottom: 4vw;
-            }
-        }
-        img {
-            width: 4vw;
-            margin-top: 6vw;
-            @include tablet {
-                width: 2vw;
-                margin-top: 9vw
-            }
-            @include desktop {
-                width: 2vw;
-                margin-top: 0vw;
-                margin-left: -20vw;
-            }
-        }
-    }
-    &__description{
-        width: 90%;
-        margin: 1rem auto;
-        font-size: 13px;
-        font-weight: 400;
-        display: flex;
-        font-family: 'avenir-next';
-        @include tablet {
-            font-size: 2vw;
-            margin-left: 3vw;
-            font-weight: 400;
-            line-height: 22px;
-        }
-        @include desktop {
-            font-size: 2.3vw;
-    margin-left: 3vw;
-    line-height: 2.8vw;
-    width: 58%;
-        }
-    }
-}
-            p {
-                font-weight: 400;
-                @include tablet{
-                font-size: 14px;
-                display: flex;
-                flex-wrap: wrap;
-                margin-top: 3vw;
-                font-family: 'avenir-next';
-                font-weight: 400;
-            }
-                @include desktop {
-                font-size: 1.5vw;
-                display: flex;
-                flex-wrap: wrap;
-                margin-top: 0.1vw;
-                font-family: "avenir-next";
-                font-weight: 400;
-                line-height: 3vw;
-            }
-        }
-            .activeVideo__divider1 {
-                display: flex;
-                border-bottom: 0.2rem solid;
-                color: #E1E1E1;
-                width: 95%;
-                margin: auto;
-                stroke-width: 1rem;
+                flex-direction: column;
+                width: 45%;
+
                 @include tablet {
-                color: white;
+                    display: flex;
+                    flex-direction: row;
                 }
                 @include desktop {
-                color: white;
+                    display: flex;
+                    width: 45%;
+                    flex-direction: row;
+                }
+
+                &__Band {
+                    padding-bottom: 1rem;
+                    font-weight: 700;
+
+                    @include tablet {
+                        padding: 0rem 2rem 0 0 ;
+                    }
+                    @include desktop {
+                        margin-top: -7%;
+                    }
                 }
             }
 
+            &-info1 {
+                display: flex;
+                flex-direction: column;
+                width: 45%;
 
-            .commentsSection {
-                @include desktop {
-                    width: 60%;
+                @include tablet {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: flex-end;
                 }
-             }
+
+                &-views {
+                    width: 15vw;
+                    display: flex;
+                    justify-content: space-between;
+                    padding-bottom: 1rem;
+
+                    @include tablet {
+                        justify-content: flex-end;
+                    }
+                    @include desktop {
+                        justify-content: flex-start;
+                        font-size: 1.2rem;
+                        margin-top: -7%;
+
+                    }
+
+                    &__img {
+                        padding: 0rem 0.5rem 0rem 0rem;
+
+                        @include desktop {
+                            margin-top: -11%;
+                        }
+                    }
+                }
+
+                &-likes {
+                    width: 15vw;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+
+                @include tablet {
+                    flex-direction: none;
+                }
+
+                @include desktop {
+                    width: 15vw;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    margin-left: 50%;
+                    margin-top: -16%;
+                    font-size: 1.2rem;
+                    }
+
+                    &__likecount {
+                        color: #AFAFAF;
+                        margin-left: 5vw;
+                    }
+
+                    @include tablet {
+                        justify-content: flex-end;
+                        padding: 0rem 0rem 1rem 0rem;
+                    }
+                    @include desktop {
+                        font-size: 1.2rem;
+                        display: flex;
+                    }
+                    &__img {
+
+                        @include tablet {
+                            padding: 0rem 0.5rem 0rem 0rem;
+                            margin-right: -4vw
+                        }
+                    }
+                }
+            }
+    }
+
+    .video__desc {
+        padding-top: 1rem;
+        font-family: $font-family;
+        @include tablet {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+        @include desktop {
+            padding-right: 6%;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2rem;
+        }
+    }
+
+
+    .video-info-info1-views__viewcount {
+        color: $silver;
+
+        @include desktop {
+            margin-top: -1%;
+            font-size: 1.2rem;
+            font-size: 1.2rem;
+        }
+    }
+
+
+    .video-info-side__date {
+        color: $silver;
+
+        @include desktop {
+            margin-top: -7%;
+            margin-left: 9%;
+            font-size: 1.2rem;
+        }
+    }

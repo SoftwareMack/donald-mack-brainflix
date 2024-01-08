@@ -1,12 +1,9 @@
-import { useState } from 'react';
-import videoDataJSON from '../../data/video-details.json';
 import './VideoDetails.scss';
-import views from '../../assets/icons/views.svg';
-import likes from '../../assets/icons/likes.svg';
+import views1 from '../../assets/icons/views.svg';
+import likes1 from '../../assets/icons/likes.svg';
 
 
 function VideoDetails({video}) {
-
 
     const {title, channel, timestamp, views, likes, description} = video;
 
@@ -23,14 +20,14 @@ function VideoDetails({video}) {
             <p className='video-info-side__Band'>By {channel}</p>
             <p className='video-info-side__date'>{date}</p>
           </div>
-          <div className='video-info-int'>
-            <div className='video-info-int-views'>
-              <img src={views} alt="views" className='video-info-int-views__img'/>
-              <p className='video-info-int-views__viewcount'>{views}</p>
+          <div className='video-info-info1'>
+            <div className='video-info-info1-views'>
+              <img src={views1} alt="views" className='video-info-info1-views__img'/>
+              <p className='video-info-info1-views__viewcount'>{views}</p>
             </div>
-            <div className='video-info-int-likes'>
-              <img src={likes} alt="likes" className='video-info-int-likes__img'/>
-              <p className='video-info-int-likes__likecount'>{likes}</p>
+            <div className='video-info-info1-likes'>
+              <img src={likes1} alt="likes" className='video-info-info1-likes__img'/>
+              <p className='video-info-info1-likes__likecount'>{likes}</p>
             </div>
           </div>
         </div>
@@ -38,5 +35,6 @@ function VideoDetails({video}) {
         </div>
     )
 }
+
 
 export default VideoDetails;

@@ -10,15 +10,15 @@ $mobile-subheader: 13px;
 $mobile-body-copy: 13px;
 $mobile-labels-buttons: 10px;
 @font-face {
-  font-family: avenir-next;
+  font-family: 'avenir-next';
   src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
 }
 @font-face {
-  font-family: avenir-next;
+  font-family: 'avenir-next';
   src: url("../../assets/fonts/AvenirNextLTPro-Demi.otf") format("Demi");
 }
 @font-face {
-  font-family: avenir-next;
+  font-family: 'avenir-next';
   src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("bold");
 }
 @media screen and (max-width: 767px) {
@@ -45,6 +45,7 @@ p {
   p {
     font-size: 13px;
     line-height: 18px;
+    margin-top: -1%;
   }
 }
 .labels-buttons {
@@ -59,62 +60,3 @@ p {
     line-height: 20px;
   }
 }
-
-$desktop-page-header: (
-  font-size: 33px,
-  line-height: 44px,
-  font-weight: bold,
-);
-
-$desktop-section-header: (
-  font-size: 12px,
-  line-height: 20px,
-  font-weight: bold,
-);
-
-$desktop-subheader: (
-  font-size: 14px,
-  line-height: 22px,
-  font-weight: bold,
-);
-
-$desktop-body-copy: (
-  font-size: 14px,
-  line-height: 22px,
-  font-weight: regular,
-);
-
-$desktop-labels-buttons: (
-  font-size: 12px,
-  line-height: 20px,
-  font-weight: bold,
-);
-
-
-$mobile-page-header: (
-  font-size: 24px,
-  line-height: 32px,
-  font-weight: bold,
-);
-
-$mobile-section-header: (
-  font-size: 12px,
-  line-height: 20px,
-  font-weight: bold,
-);
-
-$mobile-subheader: (
-  font-size: 13px,
-  line-height: 18px,
-  font-weight: bold,
-);
-$mobile-body-copy: (
-  font-size: 13px,
-  line-height: 18px,
-  font-weight: regular,
-);
-$mobile-labels-buttons: (
-  font-size: 10px,
-  line-height: 20px,
-  font-weight: bold,
-);

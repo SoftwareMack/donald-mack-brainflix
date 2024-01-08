@@ -1,0 +1,32 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/typography.scss';
+@import '../../styles/partials/global.scss';
+
+.next-video {
+    padding: 0 1rem 1rem 1rem;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet {
+        padding: 2rem 0rem 2rem;
+        width: 13em;
+    }
+
+    &__header {
+        padding-bottom: 0.5rem;
+        color: $silver;
+
+        @include tablet {
+            padding-bottom: 1rem;
+        }
+        @include desktop {
+            font-size: 1.5rem;
+        }
+    }
+}
+.video-wrapper__title {
+    font-size: 1.3rem;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 25%;
+}

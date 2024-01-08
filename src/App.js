@@ -1,27 +1,21 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header/Header';
-import Comments from './components/Comments/Comments';
-import VideoDetails from './components/VideoDetails/VideoDetails';
-
+import Main from './components/pages/Main/Main';
+import Upload from'./components/pages/Upload/Upload';
+import Header from '../src/components/Header/Header';
+import './App.scss'
+import { Routes, Route } from 'react-router-dom';
 
 
 function App() {
+
   return (
-  <>
-    < Header/>
-
-    <VideoDetails />
-    <Comments />
-
-
-
-
-
-
-
-
-  </>
+    <>
+    <Header />
+    <Routes>
+      <Route path='/' element={<Main />}></Route>
+      <Route path='/video/:idFromParams' element={<Main />}></Route>
+      <Route path='Upload' element={<Upload />}></Route>
+    </Routes>
+    </>
   );
 }
 

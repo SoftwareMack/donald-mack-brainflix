@@ -1,7 +1,6 @@
 import upload from '../../assets/icons/upload.svg';
 import './Button.scss';
 import React from 'react';
-import PropTypes from 'prop-types'; // Import PropTypes for type checking
 
 function Button  (props)  {
     const { buttonLabel } = props;

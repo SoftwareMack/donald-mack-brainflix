@@ -1,0 +1,92 @@
+@import '../../styles/partials/mixins.scss';
+@import '../../styles/partials/typography.scss';
+@import '../../styles/partials/global.scss';
+
+
+.body {
+    font-family: $font-family, sans-serif;
+    display: flex;
+}
+
+
+.next-video {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0rem 0.5rem 0rem;
+
+    @include tablet {
+        justify-content: flex-start;
+    }
+
+    &__thumbnail {
+        width: 33vw;
+        height: 21vw;
+        object-fit: cover;
+        border-radius: 4px;
+
+        @include tablet {
+            width: 7rem;
+            height: 3.9375rem;
+            margin-right: 1rem;
+        }
+        @include desktop {
+            width: 30%;
+            height: 8rem;
+        }
+    }
+
+    &-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 50vw;
+        color: black;
+        font-size: 2vw;
+        padding-left: 37vw;
+        margin-top: -26vw;
+        @include tablet {
+            display: flex;
+        flex-direction: column;
+        width: 50vw;
+        color: black;
+        font-size: 2vw;
+        padding-left: 37vw;
+        margin-top: -26vw;
+        }
+        @include desktop {
+        display: flex;
+        flex-direction: column;
+        width: 53vw;
+        padding-left: 23vw;
+        }
+        @include tablet {
+            width: 10rem;
+        }
+
+        &__title {
+            padding-bottom: 0.5rem;
+
+            @include tablet {
+                padding-bottom: 0.5rem;
+                margin-top: 18vw;
+            }
+            @include desktop {
+                display: flex;
+                margin-top: 10%;
+                font-size: 1.4rem;
+            }
+        }
+    }
+    .next-video-wrapper__channel {
+        @include desktop {
+            font-size: 1.6rem;
+            margin-top: 25%;
+            color: $brainflix-black;
+            text-decoration: none;
+        }
+    }
+    .next-video-wrapper__channel__a {
+        text-decoration: none;
+        margin-top: -1%;
+
+    }
+}
