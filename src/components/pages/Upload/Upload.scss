@@ -49,6 +49,8 @@ $alabaster: #FAFAFA;
 
         @include desktop {
             padding-bottom: 1.5rem;
+            font-size: 5em;
+            font-family: $font-family;
         }
     }
 
@@ -63,6 +65,12 @@ $alabaster: #FAFAFA;
             @include tablet {
                 padding-top: 1.5rem;
             }
+            @include desktop {
+                font-size: 1.4rem;
+                color: #AFAFAF;
+                font-family: "avenir-next", sans-serif, sans-serif;
+                display: flex;
+            }
         }
 
         &__title {
@@ -72,7 +80,11 @@ $alabaster: #FAFAFA;
             font-family: $font-family, sans-serif;
 
             @include desktop {
-                margin-left: 60%;
+                margin-left: 190%;
+    display: flex;
+    width: 100%;
+    font-size: 1.9em;
+    font-family: 'avenir-next';
             }
         }
 
@@ -82,7 +94,9 @@ $alabaster: #FAFAFA;
             font-family: $font-family, sans-serif;
 
             @include desktop {
-                margin-left: 60%;
+                margin-left: 190%;
+                width: 100%;
+                font-size: 1.8em;
             }
         }
     }
@@ -96,7 +110,7 @@ $alabaster: #FAFAFA;
         }
 
         @include desktop {
-            width: 200%;
+            width: 450%;
         }
 
         &-wrapper {
@@ -139,8 +153,11 @@ $alabaster: #FAFAFA;
             background-color: $alabaster;
 
             @include desktop {
-                margin-left: 60%;
-                width: 390%;
+                margin-left: 190%;
+                width: 250%;
+                height: 10%;
+                margin-top: -20%;
+                font-size: 1.4em;
             }
 
             &:focus {
@@ -156,8 +173,10 @@ $alabaster: #FAFAFA;
             padding: 0.6rem;
             background-color: $alabaster;
             @include desktop {
-                margin-left: 60%;
-                width: 390%;
+                margin-left: 190%;
+                width: 250%;
+                height: 30%;
+                font-size: 1.8em;
             }
 
             &:focus {
@@ -214,6 +233,10 @@ $alabaster: #FAFAFA;
             @include tablet {
                 width: 100%;
             }
+            @include desktop {
+                margin-left: -150%;
+                width: 300%;
+            }
         }
 
         &__cancel {
@@ -230,8 +253,10 @@ $alabaster: #FAFAFA;
             }
 
             @include desktop {
-                width: 15%;
-                margin-right: 3%;
+                margin-left: 60%;
+                display: flex;
+                width: 200%;
+                margin-right: 20%;
             }
         }
     }
