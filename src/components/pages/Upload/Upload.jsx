@@ -10,7 +10,7 @@ function Upload() {
                 <h1 className='upload__heading'>Upload Video</h1>
                 <div className='desktop-wrapper'>
                     <div className='upload__img-wrapper'>
-                       <p className='upload-label__img'>VIDEO THUMBNAIL</p>
+                    <p className='upload-label__img'>VIDEO THUMBNAIL</p>
                         <img className='upload__img' src={uploadPreview} alt=''/>
                     </div>
                     <form className='upload-form'>

@@ -20,6 +20,14 @@
     &__number {
         padding: 1rem 0;
         font-weight: 700;
+        @include tablet {
+            font-size: 1.2rem;
+        }
+
+        @include desktop {
+            font-weight: 700;
+            font-size: 1.8rem
+        }
     }
 }
 
@@ -54,6 +62,14 @@
         @include tablet {
             margin: 0 1rem 0 0;
         }
+        @include desktop {
+            width: 3.25rem;
+            height: 3.25rem;
+            object-fit: cover;
+            border-radius: 50%;
+            margin-top: 1.3rem;
+            margin-left: -3%;
+        }
     }
 
     &-wrapper {
@@ -68,6 +84,8 @@
 
         @include desktop {
             width: 48vw;
+            margin-top: -3%;
+            margin-left: -28%;
         }
 
         &__text {
@@ -80,6 +98,15 @@
             border: solid 1px $mercury;
             border-radius: 4px;
             background-color: $alabaster;
+
+            @include tablet {
+                width: 28rem;
+                height: 1.7rem;
+            }
+            @include desktop {
+                width: 26rem;
+                height: 2rem;
+            }
 
             &:focus {
                 outline: solid $brainflix-blue .0625rem;
@@ -104,6 +131,7 @@
             background-repeat: no-repeat;
             background-position: 0.7rem center;
             background-size: 1.2rem;
+            color: white;
 
             @include tablet {
                 width: 10rem;
@@ -111,14 +139,28 @@
                 margin-top: 0.2rem;
                 margin-left: 0.75rem;
             }
+            @include desktop {
+                width: 30%;
+                margin-left: 85%;
+                margin-top: -12%;
+            }
         }
     }
 }
 
-.text-wrapper {
-    width: 73vw;
+            .text-wrapper {
+                width: 73vw;
 
-    @include tablet {
-        width: 30rem;
+                @include tablet {
+                width: 30rem;
+                }
+            }
+
+.input-wrapper__label {
+    color: $silver;
+
+    @include desktop {
+        margin-top: 4vw;
+        display: flex;
     }
 }

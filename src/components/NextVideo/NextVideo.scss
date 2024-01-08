@@ -8,11 +8,8 @@
     flex-direction: column;
 
     @include tablet {
-        padding: 0 2rem 2rem 2rem;
-    }
-
-    @include desktop {
-        padding: 2rem 2rem 4rem 2rem;
+        padding: 2rem 0rem 2rem;
+        width: 13em;
     }
 
     &__header {
@@ -22,5 +19,14 @@
         @include tablet {
             padding-bottom: 1rem;
         }
+        @include desktop {
+            font-size: 1.5rem;
+        }
     }
+}
+.video-wrapper__title {
+    font-size: 1.3rem;
+    line-height: 22px;
+    font-weight: 400;
+    margin-top: 25%;
 }

@@ -24,10 +24,13 @@
     .video__title {
         border-bottom: solid 2px $mercury;
         padding-bottom: 1rem;
+        font-family: $font-family;
+        font-size: 1.7em;
 
         @include tablet {
             border: none;
             padding-bottom: 0rem;
+            font-size: 2em;
         }
     }
 
@@ -37,7 +40,7 @@
             flex-direction: row;
             justify-content: space-between;
             border-bottom: solid 2px $mercury;
-            padding: 1rem 0 1rem 0;
+            padding: 0rem 0 1rem 0;
 
             @include desktop {
                 padding-right: 2rem;
@@ -52,6 +55,11 @@
                     display: flex;
                     flex-direction: row;
                 }
+                @include desktop {
+                    display: flex;
+                    width: 45%;
+                    flex-direction: row;
+                }
 
                 &__Band {
                     padding-bottom: 1rem;
@@ -60,10 +68,13 @@
                     @include tablet {
                         padding: 0rem 2rem 0 0 ;
                     }
+                    @include desktop {
+                        margin-top: -7%;
+                    }
                 }
             }
 
-            &-int {
+            &-info1 {
                 display: flex;
                 flex-direction: column;
                 width: 45%;
@@ -83,9 +94,19 @@
                     @include tablet {
                         justify-content: flex-end;
                     }
+                    @include desktop {
+                        justify-content: flex-start;
+                        font-size: 1.2rem;
+                        margin-top: -7%;
+
+                    }
 
                     &__img {
                         padding: 0rem 0.5rem 0rem 0rem;
+
+                        @include desktop {
+                            margin-top: -11%;
+                        }
                     }
                 }
 
@@ -99,21 +120,34 @@
                     flex-direction: none;
                 }
 
+                @include desktop {
+                    width: 15vw;
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: row;
+                    margin-left: 50%;
+                    margin-top: -16%;
+                    font-size: 1.2rem;
+                    }
+
                     &__likecount {
-                        //padding-left: 0.5rem;
                         color: #AFAFAF;
+                        margin-left: 5vw;
                     }
 
                     @include tablet {
                         justify-content: flex-end;
                         padding: 0rem 0rem 1rem 0rem;
-                        ;
                     }
-
+                    @include desktop {
+                        font-size: 1.2rem;
+                        display: flex;
+                    }
                     &__img {
 
                         @include tablet {
                             padding: 0rem 0.5rem 0rem 0rem;
+                            margin-right: -4vw
                         }
                     }
                 }
@@ -123,17 +157,36 @@
     .video__desc {
         padding-top: 1rem;
         font-family: $font-family;
-
+        @include tablet {
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
         @include desktop {
-            padding-right: 2rem;
+            padding-right: 6%;
+            font-size: 1.6rem;
+            font-weight: 400;
+            line-height: 2rem;
         }
     }
 
 
-    .video-info-int-views__viewcount {
+    .video-info-info1-views__viewcount {
         color: $silver;
+
+        @include desktop {
+            margin-top: -1%;
+            font-size: 1.2rem;
+            font-size: 1.2rem;
+        }
     }
+
 
     .video-info-side__date {
         color: $silver;
+
+        @include desktop {
+            margin-top: -7%;
+            margin-left: 9%;
+            font-size: 1.2rem;
+        }
     }

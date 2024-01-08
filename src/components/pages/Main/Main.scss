@@ -10,14 +10,17 @@
     @include desktop {
         width: 100%;
         display: flex;
-        padding: 0 10rem 0 6rem;
+        padding: 0 0rem 0 6rem;
+        justify-content: space-between;
     }
 
     &-left {
 
         @include desktop {
-            width: 73%;
+            width: 130%;
             border-right: solid 2px $mercury;
+            box-sizing: border-box;
+            flex-grow: 1;
         }
     }
 }
@@ -37,7 +40,7 @@
     border-radius: 50%;
     width: 9rem;
     height: 9rem;
-    animation: spin 2s linear infinite;
+    //animation: spin 2s linear infinite;
   }
 
   @keyframes spin {

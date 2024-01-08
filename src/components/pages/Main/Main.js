@@ -1,9 +1,9 @@
 import axios from 'axios';
 import '../Main/Main.scss';
 import VideoPlayer from '../../../components/VideoPlayer/VideoPlayer';
-//import videoDetails from '../../../data/video-details.json';
+import videoDetails from '../../../data/video-details.json';
 import VideoDetails from '../../../components/VideoDetails/VideoDetails';
-//import videos from '../../../data/videos.json';
+import videos from '../../../data/videos.json';
 import { useEffect, useState } from "react";
 import { useParams } from 'react-router-dom';
 import NextVideos from '../../../../src/components/NextVideo/NextVideo';
