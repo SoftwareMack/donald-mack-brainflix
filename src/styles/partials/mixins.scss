@@ -50,11 +50,6 @@ $mobile-body-copy: 13px;
 $mobile-labels-buttons: 10px;
 $desktop-labels-buttons: 12px;
 
-$cta-button-height: 40px;
-$cta-button-width-desktop: 150px;
-$cta-button-padding: 32px;
-$cta-button-radius: 4px;
-
 $nav-height-desktop: $cta-button-height;
 $nav-height-tablet: $cta-button-height;
 $nav-height-mobile: $cta-button-height;
@@ -88,7 +83,7 @@ $mobile-padding-between: 16px;
   }
 
   @mixin button-styles {
-    height: 40px;
+    height: $cta-button-height;
     padding-left: $cta-button-padding;
     padding-right: $cta-button-padding;
     border-radius: $cta-button-radius;

@@ -7,7 +7,7 @@ import React from 'react';
 
 
 function CommentCard({comment}){
-    console.log(comment)
+   
     return (
         <div className='comment-card'>
             <div className='comment-card__img'></div>

@@ -11,6 +11,6 @@ function Button  (props)  {
 
             <button><img src={buttonImage} />{buttonLabel}</button>
         </div>
-  )};
+)};
 
 export default Button;
