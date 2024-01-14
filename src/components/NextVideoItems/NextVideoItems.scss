@@ -24,6 +24,8 @@
         object-fit: cover;
         border-radius: 4px;
 
+
+
         @include tablet {
             width: 7rem;
             height: 3.9375rem;
@@ -39,15 +41,24 @@
         display: flex;
         flex-direction: column;
         width: 50vw;
-        color: black;
+        color: $brainFlix-black;
         font-size: 2vw;
         padding-left: 37vw;
         margin-top: -26vw;
+        @include mobile {
+            display: flex;
+        flex-direction: column;
+        width: 50vw;
+        color: $brainFlix-black;
+        font-size: 2vw;
+        padding-left: 37vw;
+        margin-top: -26vw;
+        }
         @include tablet {
             display: flex;
         flex-direction: column;
         width: 50vw;
-        color: black;
+        color: $brainFlix-black;
         font-size: 2vw;
         padding-left: 37vw;
         margin-top: -26vw;

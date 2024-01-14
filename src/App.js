@@ -1,5 +1,5 @@
-import Main from './components/pages/Main/Main';
-import Upload from'./components/pages/Upload/Upload';
+import Page from '../src/pages/Page/Page';
+import Upload from'../src/pages/Upload/Upload';
 import Header from '../src/components/Header/Header';
 import './App.scss'
 import { Routes, Route } from 'react-router-dom';
@@ -11,8 +11,8 @@ function App() {
     <>
     <Header />
     <Routes>
-      <Route path='/' element={<Main />}></Route>
-      <Route path='/video/:idFromParams' element={<Main />}></Route>
+      <Route path='/' element={<Page />}></Route>
+      <Route path='/video/:idFromParams' element={<Page />}></Route>
       <Route path='Upload' element={<Upload />}></Route>
     </Routes>
     </>

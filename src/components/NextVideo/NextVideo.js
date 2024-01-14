@@ -1,7 +1,6 @@
 import NextVideoItem from '../NextVideoItems/NextVideoItems';
 import '../NextVideo/NextVideo.scss';
 
-
 function NextVideo({videos}){
     return (
         <section className='next-video'>
